@@ -1,1 +1,18 @@
-/* Add Global styles here */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.column2 {
+  flex: 20%;
+  padding: 5px;
+}
+
+body {
+    background-color: rgb(183, 201, 240);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
