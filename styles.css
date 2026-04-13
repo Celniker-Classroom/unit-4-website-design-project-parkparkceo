@@ -10,18 +10,23 @@
   text-align: center;
   padding-bottom: 100px;
 }
-.navbar ul {
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s; 
+}
+
+#navbar ul {
   list-style-type: none;
   background-color: #0c3169;
   padding: 0px;
   margin: 0px;
   overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index:1000;
 }
-.navbar a{
+#navbar a{
   color: white;
   text-decoration: none;
   padding: 15px;
@@ -30,11 +35,11 @@
   border-bottom: 3px solid transparent;
 
 }
-.navbar a:hover{
+#navbar a:hover{
   background-color: #032649;
   border-bottom: 4px solid rgb(214, 42, 42);
 }
-.navbar li {
+#navbar li {
   float: left;
   display: flex;
 }

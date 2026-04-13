@@ -3,9 +3,53 @@
   <head>
     <title>DALV | History</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>  
+  <style>
+    .container {
+      position: relative;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      background-color: #162793;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+      width: 100%;
+      left: 0;
+    }
+
+    .text {
+      color: rgb(240, 248, 255);
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      white-space: normal;
+    }
+  </style>
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="navbar">
       <ul>
         <li><a href="index.html"><img src="image/deltawhite.png" alt="Delta Plane Banner" style="width:150px;"></a></li>
         <li style="font-size: 31px;"><a href="fleet.html">Fleet</a></li>
@@ -17,11 +61,13 @@
 
     <main>
     <h1 style="padding: 10px;">Our story</h1>
-      <div class="rows">
-        <h3>Huff Daland Dusters</h3>
-        <img src="image/hufflandusters.jpg" alt="Crop Duster Plane" style="width: 50%;">    
-        <p>Delta Air Lines was first founded in 1925 as the Huff Daland Dusters, a crop dusting company for fields.</p>
-      </div>
+      <div class="container">
+        <img src="image/hufflandusters.jpg" alt="Huff Daland Dusters" class="image">
+        <div class="overlay">
+          <div class="text">Delta Air Lines was first founded in 1925 as the Huff Daland Dusters, a crop dusting company for fields.</div>
+        </div>
+      </div>  
+    
 
       <div class="rows">
         <h3 style="text-align: center;">First Commercial Flight</h3>
