@@ -4,61 +4,6 @@
     <title>DALV | History</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>  
-  <style>
-    .wrapper {
-      display: flex;
-      gap: 20px;
-      padding: 10px;
-    }
-    .container {
-      position: relative;
-      width: 50%;
-      overflow: hidden;
-    }
-
-    .image {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      left: 100%;
-      background-color: #0b1976;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      transition: .45s ease;
-    }
-    .container:hover .overlay {
-      left: 0;
-    }
-    .overlay2 {
-      position: absolute;
-      bottom: 0;
-      right: 100%;
-      background-color: #0b1976;
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      transition: .45s ease;
-    }
-    .container:hover .overlay2 {
-      right: 0;
-    }
-    .text {
-      color: rgb(240, 248, 255);
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      width: 80%;
-    }
-  </style>
   </head>
   <body>
     <nav id="navbar">
@@ -75,28 +20,26 @@
     <h1 style="padding: 10px;">Our story</h1>
     <div class="wrapper">
 
-      <div class="container">
-        <img src="image/hufflandusters.jpg" alt="Huff Daland Dusters" class="image">
+      <div class="hcontainer">
+        <img src="image/hufflandusters.jpg" alt="Huff Daland Dusters" class="himage">
         <div class="overlay">
           <div class="text">Delta Air Lines was first founded in 1925 as the Huff Daland Dusters, a crop dusting company for fields.</div>
         </div>
       </div>  
     
-      <div class="container">
-        <img src="image/restored-travel-air-in-flight.webp" alt="First Delta Flight" class="image">
+      <div class="hcontainer">
+        <img src="image/restored-travel-air-in-flight.webp" alt="First Delta Flight" class="himage">
         <div class="overlay2">
           <div class="text">At 8 a.m. on June 17, 1929, Delta's flew their first passenger flight with a Travel Air S-6000B.</div>
         </div>
       </div>  
     </div>
 
-    <div class="wrapper">
-      <div class="rows">
         <h3 style="text-align: center;">Begins International Operations</h3>
         <img src="image/first_international.webp" alt="First International Flight" style="width: 50%;">
         <p>In 1961, Delta opened their first international routes to the Caribbean and Caracas.</p>
       </div>
-    </div>      
+
     </main>
   </body>
 
