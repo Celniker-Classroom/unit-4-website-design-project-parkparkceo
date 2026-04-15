@@ -1,4 +1,7 @@
-* {box-sizing:border-box}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
 .slideshow-container {
   max-width: 1000px;
@@ -7,7 +10,7 @@
 }
 
 .mySlides {
-  display:none;
+  display:hidden;
 }
 
 .prev, .next {
@@ -35,7 +38,7 @@
 }
 
 .text {
-  color: #f2f2f2;
+  color: #3a4db8;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -60,7 +63,7 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .active, .dot:hover {
