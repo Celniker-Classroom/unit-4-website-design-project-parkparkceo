@@ -3,7 +3,7 @@
   <head>
     <title>DALV | Route Map</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js">magnify("myimage", 3);</script>
   </head>
   <body>
     <nav id="navbar">
@@ -16,85 +16,91 @@
       </ul>
     </nav>
     <main>
-    <h1 style="padding-top: 10px;">Start planning your next trip</h1>
-     <h2 style="font-size: 20px; margin: 20px; font-family:'Lucida Sans', sans-serif">Explore our entire network and discover more destinations with our route route map.</h2>
-    <img src="image/deltaRoutes.png" alt="Route Map" style="width:100%">
+      <h1 style="padding-top: 10px;">Start planning your next trip</h1>
+      <h2 style="font-size: 20px; margin: 20px; font-family:'Lucida Sans', sans-serif">Explore our entire network and discover more destinations with our route route map.</h2>
+      <div class="img-magnifier-container">
+        <img src="image/deltaRoutes.png" id="routemap" alt="Route Map" style="width:100%;">
+      </div>
+      <p style="  position: absolute; bottom: 10px; left: 30%; padding: 0; margin: 0;">Click <a href="https://www.delta.com/us/en/travel-planning-center/find-your-destination/route-map">here</a> for the interactive map.</p>
+      <script>
+        /* Initiate Magnify Function
+        with the id of the image, and the strength of the magnifier glass:*/
+        magnify("routemap", 3);
+      </script>
     
-    <p>Click <a href="https://www.delta.com/us/en/travel-planning-center/find-your-destination/route-map">here</a> for the interactive map.</p>
+      <div class="slideshow-container">
 
-    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="image/london.jpg" style="width:100%; margin: 0px; padding: 0px;">
+          <div class="label">London</div>
+        </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 4</div>
-        <img src="image/london.jpg" style="width:100%; margin: 0px; padding: 0px;">
-        <div class="label">London</div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="image/banner-cancun.jpg" style="width:100%; margin: 0px; padding: 0px;">
+          <div class="label">Cancun</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="image/athens.jpg" style="width:100%; margin: 0px; padding: 0px;">
+          <div class="label">Athens</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="image/rome.jpg" style="width:100%; margin: 0px; padding: 0px;">
+          <div class="label">Rome</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+      <br>
 
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 4</div>
-        <img src="image/banner-cancun.jpg" style="width:100%; margin: 0px; padding: 0px;">
-        <div class="label">Cancun</div>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
       </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 4</div>
-        <img src="image/athens.jpg" style="width:100%; margin: 0px; padding: 0px;">
-        <div class="label">Athens</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 4</div>
-        <img src="image/rome.jpg" style="width:100%; margin: 0px; padding: 0px;">
-        <div class="label">Rome</div>
-      </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
         
-  <h4 style="margin: 20px;">Our Longest Route</h4>
+      <h4 style="margin: 20px;">Our Longest Route</h4>
 
-  <style>
-  table, th, td {
-  border: 1px solid rgb(16, 48, 165);
-  }
-  </style>
+      <style>
+      table, th, td {
+      border: 1px solid rgb(16, 48, 165);
+      }
+      </style>
 
-  <table style="width:60%; margin: 20px;">
-    <tr>
-      <th>From</th>
-      <th>To</th>
-      <th>Layover</th> 
-      <th>Distance</th>
-      <th>Time</th>
-    </tr>
-    <tr>
-      <td>Atlanta (ATL)</td>
-      <td>Mumbai (BOM)</td>
-      <td>London (LHR)</td>
-      <td>13,696 km</td>
-      <td>18 hours</td>
-    </tr>
-  </table>
+      <table style="width:60%; margin: 20px;">
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Layover</th> 
+          <th>Distance</th>
+          <th>Time</th>
+        </tr>
+        <tr>
+          <td>Atlanta (ATL)</td>
+          <td>Mumbai (BOM)</td>
+          <td>London (LHR)</td>
+          <td>13,696 km</td>
+          <td>18 hours</td>
+        </tr>
+      </table>
 
-    <p>Our Top 5 Favorite Destinations</p>
-    <ol>
+      <p>Our Top 5 Favorite Destinations</p>
+      <ol>
         <li>London</li>
         <li>Cancún</li>
         <li>Rome</li>
         <li>Seoul</li>
         <li>Athens</li>
-    </ol>
+      </ol>
     </main>  
   </body>
 </html>
